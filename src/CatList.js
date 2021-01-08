@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class CatList extends Component {
     render() {
         console.log(this.props.catPics)
-        const cats = this.props.catPics.map(cat => <img alt="oops" src={cat.url} id={cat.id}/>)
+        const cats = this.props.catPics.map(cat => <img alt="oops" src={cat.url} id={cat.id} key={cat.id} />)
         debugger
         return (
             <div>
